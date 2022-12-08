@@ -1,0 +1,26 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.card-header {
+  font-weight: bolder;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 600px;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #282c34;
+}
