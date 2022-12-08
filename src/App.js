@@ -1,5 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { CardGrid } from "./Components/CardGrid/CardGrid";
+import { UseCasesModule } from "./Components/UseCasesModule/UseCasesModule";
 
 function App() {
   return (
@@ -9,15 +11,16 @@ function App() {
           <b>SmartQ SMS Bot</b>
         </h1>
         <p>Your AI powered virtual assistant, available via sms.</p>
-        <a
-          className="App-link"
-          href="https://buy.stripe.com/3cs5kV9uW39N1s4288"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          className="Signup-Button"
+          onClick={() =>
+            (window.location.href = "https://buy.stripe.com/3cs5kV9uW39N1s4288")
+          }
         >
-          Sign up
-        </a>
+          Sign Up
+        </button>
       </header>
+      <UseCasesModule />
     </div>
   );
 }
